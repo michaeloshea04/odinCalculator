@@ -1,3 +1,41 @@
 h1{
     color: blueviolet;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: blueviolet;
+}
+
+.container {
+    background-color: aquamarine;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.display {
+    padding: 10px;
+    text-align: right;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.operator {
+    background-color: black;
+    font-weight: bold;
+}
+
+.clear {
+    grid-column: span 2;
+}
