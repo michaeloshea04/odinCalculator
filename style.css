@@ -1,5 +1,19 @@
 h1{
-    color: blueviolet;
+    color: rgb(20, 3, 35);    
+}
+
+h2{
+    color:#fdfffc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
@@ -7,35 +21,87 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     margin: 0;
-    background-color: blueviolet;
+    background-color: rgb(204, 180, 226);
+    flex-direction: column;
 }
 
 .container {
-    background-color: aquamarine;
+    background-color: #011627;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    width: 300px;
+    width: 200px;
+    
 }
 
-.display {
+#outputScreen {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: rgb(168, 177, 174);
     padding: 10px;
-    text-align: right;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 50px;
+    width: 170px;
+    height: 50px;
+}
+
+input{
+    grid-column: span 4;
+    height: 70px;
+    width: 180px;
+    background-color: #ff9f1c;
+    box-shadow: inset -5px -5px 12px #B6CCFE,
+                inset 5px 5px 12px rgba(0,0,0,.16);
+    border: none;
+    border-radius: 30px;
+    color: rgba(70,70,70);
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
 }
 
 button {
     padding: 15px;
+    margin: 3px;
     font-size: 18px;
     border: none;
-    background-color: blue;
+    border-radius: 7px;
+    background-color: #fdfffc;
     cursor: pointer;
 }
 
+.digit:hover{
+    background-color: rgb(80, 77, 77);
+    color: #fdfffc;
+}
+
 .operator {
-    background-color: black;
+    background-color: #2ec4b6;
     font-weight: bold;
 }
 
-.clear {
-    grid-column: span 2;
+.operator:hover{
+    background-color: rgb(80, 77, 77);
+    color: #fdfffc;
 }
+
+.clear {
+    grid-column: span 1.5;
+}
+
+#clear:hover {
+    background-color: rgb(80, 77, 77);
+    color: #fdfffc;
+}
+
+#equals:hover {
+    background-color: rgb(80, 77, 77);
+    color: #fdfffc;
+}
+
